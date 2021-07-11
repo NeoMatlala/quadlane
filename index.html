@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--CSS STYLESHEET-->
+    <script src="https://use.fontawesome.com/8c5e977b71.js"></script>
+    <!--FONT AWESOME-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--BOXICONS-->
+    <title>QuadLane</title>
+</head>
+
+<body>
+    <!-- HERO  -->
+    <div class="hero">
+        <!--NAVIGATION-->
+        <header class='header' id='header'>
+            <div class="nav bd-container" id="nav-menu2">
+                <a href="index.html" class="logo"><img src="assets/logo.svg" alt="logo" class=''></a>
+
+                <div class="nav-menu-container" id='nav-menu'>
+                    <ul class="nav-list">
+                        <li class='nav-item'><a href="index.html" class='nav-link active-link'>Home</a></li>
+                        <li class='nav-item'><a href="about.html" class='nav-link'>Features</a></li>
+                        <li class='nav-item'><a href="contact.html" class='nav-link'>Request A Demo</a></li>
+                        <li class='nav-item'><a href="contact.html" class='nav-link'>Pricing</a></li>
+                        <li class='nav-item'><a href="contact.html" class='nav-link'>Clients</a></li>
+                        <li class='nav-item'><a href="contact.html" class='nav-link'>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class='btn-wrap'>
+                    <a href="index.html" class="sign-in-btn">Sign In</a>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero-container">
+            <div class="text-wrap">
+                <h1 class="hero-heading">A <span>SaaS</span> Audit, <br> Project & Invoice Information <br> Management System</h1>
+
+                <p class="hero-desc">Smart software that makes running your <br> small business easy, fast and secure.</p>
+
+                <div class="hero-btn-wrap">
+                    <a class="hero-btn" href="#about">Try 30 days free trial</a>
+                </div>
+            </div>
+            <div class="img-wrap">
+                <img src="assets/hero.png" alt="hero-image">
+                <div class="hero-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT  -->
+    <div class="about">
+        <div class="about-img-wrap">
+            <img src="assets/hero.svg" alt="hero-image">
+        </div>
+        <div class="about-text-wrap">
+            <h1 class="title">What is QuadLane?</h1>
+            <hr>
+            <p class="about-desc">
+                QuadLane Is An Audit, Project, Invoice Information Management System, SaaS Which Means Your Company Can Be Up And Running Immediately, With No Investment In Hardware, Software, Or Other Third Party Licenses.
+            </p>
+        </div>
+    </div>
+
+    <!-- COST  -->
+    <div class="cost">
+        <div class="about-text-wrap cost-text">
+            <h1 class="title">Cost-Effective</h1>
+            <hr>
+            <p class="about-desc">
+                Not only is the system free to try for 30 days, the ROI is more than interesting.
+                No start-up costs. A free fixed fee per month, per user.
+            </p>
+        </div>
+        <div class="cost-img-wrap">
+            <img src="assets/money.svg" alt="hero-image">
+        </div>
+    </div>
+
+    <!-- MANAGEMENT  -->
+    <div class="cost central">
+        <div class="cost-img-wrap">
+            <img src="assets/central.svg" alt="hero-image">
+        </div>
+        <div class="about-text-wrap management-text">
+            <h1 class="title">Central Management</h1>
+            <hr>
+            <p class="about-desc">
+                The time of dragging heavy files is over. With centralized management, all audits, projects & invoices are easily managed from a central location. You and your team can feature all the information needed to continue working on a project, anywhere.
+            </p>
+        </div>
+    </div>
+
+    <!-- ACCESSIBLE -->
+    <div class="cost central accessible">
+        <div class="about-text-wrap accessible-text">
+            <h1 class="title">Accessible</h1>
+            <hr>
+            <p class="about-desc accessible-desc">
+                A Cloud based solution easy to access anytime, anywhere and is safe to use. Your data is safe on powerful & fast servers in the highly secured Microsoft Azure Cloud, which guarantees a 99.99999% uptime. We strive to improve quality through continuous developments.
+            </p>
+        </div>
+        <div class="accessible-img-wrap ">
+            <img src="assets/accessible.svg" alt="hero-image">
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="features-container">
+        <h1 class="feature-title">Features</h1>
+
+        <div class="tab-container">
+            <ul class="tabs">
+                <li data-tab-target='#home' class='active tab'>Audit</li>
+                <li data-tab-target='#findings' class='tab'>Findings</li>
+                <li data-tab-target='#projects' class='tab'>Projects</li>
+                <li data-tab-target='#tasks' class='tab'>Tasks</li>
+                <li data-tab-target='#timesheet' class='tab'>Timesheet</li>
+                <li data-tab-target='#expenses' class='tab'>Expenses</li>
+                <li data-tab-target='#risk' class='tab'>Risk</li>
+                <li data-tab-target='#invoices' class='tab'>Invoices</li>
+                <li data-tab-target='#quotations' class='tab'>Quotations</li>
+                <li data-tab-target='#tickets' class='tab'>Tickets</li>
+                <li data-tab-target='#reporting' class='tab'>Reporting</li>
+            </ul>
+
+            <div class="tab-content">
+                <!-- tab -->
+                <div id="home" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Audit tab allows users to view a summary of audits, including a count of audit findings that are open, closed and past due. With one click, users can view all of their findings assigned to the audit</p>
+    
+                             <h2>Advanced Filters</h2>
+                             <p class='tab-desc'>The filter, or query function, allows you to narrow down the list of audits. For example, the list of audits can be limited by type, status, priority of findings, past due findings, archived findings, tags and more. </p>
+    
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also "archive" complete audits along with the underlying assigned findings. Archiving audits allows management to maintain the audit data for metrics, but remove the information from initial menu.</p>
+                        </div>
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="findings" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Findings tab allows you quick access to the listing of audit findings (List View/Board View).. With the filter/query function, you can limit information to item such as: <br> Finding Priority or Status <br>
+                                Finding Age, including past due age <br>
+                                Archived, repeat findings, or followed findings
+                                Department or Individual <br>
+                                Finding tags or custom field values <br>
+                                There are other capabilities that are not found in a spreadsheet. These capabilities include sending email reminders to an finding assignee, being notified of changes to an findings, such as findings you follow, and assigning tags or labels to findings.</p>
+    
+                             <h2>FINDING EXPORT / BULK ACTIONS</h2>
+                             <p class='tab-desc'>The system allows you to performing bulk actions on many items, including selecting multiple audit findings for export. Below is a listing of mass edit capabilities within the Findings section. <br> <br>
+                                Add comments or tags <br>
+                                Archive/Restore <br>
+                                Assign findings to an individual or department <br>
+                                Assign finding to an audit <br>
+                                Export findings to Excel <br>
+                                Follow / Stop Following (would display/remove from Dashboard widget) <br>
+                                Update Target Resolution Date (finding due date) <br>
+                                Update Actual Resolution Date (finding completion date) <br>
+                                Update Finding Priority (high, medium, low) <br>
+                                Update Finding Status (Open, Closed)   
+                             </p>
+    
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also "archive" complete audits along with the underlying assigned findings. Archiving audits allows management to maintain the audit data for metrics, but remove the information from initial menu.</p>
+                        </div>
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="projects" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Project tab allows users to view a summary of projects, including a count of project tasks that are open, closed, and past due. With one click, users can view all of the tasks assigned to that project.</p>
+    
+                             <h2>Advance Filters</h2>
+                             <p class='tab-desc'>The filter or query function allows you to narrow down the list of projects. For example, the list of projects can be limited by type, status, priority of tasks, past due tasks, archived tasks, tags, and more.  
+                             </p>
+    
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also “archive” complete projects along with the underlying assigned tasks. Archiving projects allows management to maintain the project data for metrics, but remove the information from initial menu.</p>
+                        </div>
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="tasks" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Tasks tab allows you quick access to the listing of project tasks (List View/Board View). With the filter/query function, you can limit information to item such as: <br> <br>
+                                Task Priority or Status <br>
+                                Task Age, including past due age <br>
+                                Archived, repeat findings, or followed tasks <br>
+                                Department or Individual <br>
+                                Task tags or custom field values <br>
+                                There are other capabilities that are not found in a spreadsheet. <br> These capabilities include sending email reminders to an task assignee, being notified of changes to an tasks, such as tasks you follow, and assigning tags or labels to tasks.</p>
+    
+                             <h2>Task Export / Bulk actions</h2>
+                             <p class='tab-desc'>The system allows you to performing bulk actions on many items, including selecting multiple audit tasks for export. Below is a listing of mass edit capabilities within the Tasks section: <br> <br>
+                                Add comments or tags <br>
+                                Archive/Restore <br>
+                                Assign tasks to an individual or department <br>
+                                Assign task to an project <br>
+                                Assign task to an sprint broad <br>
+                                Export tasks to Excel <br>
+                                Follow / Stop Following <br>
+                                Update Target Resolution Date (task due date) <br>
+                                Update Actual Resolution Date (task completion date) <br>
+                                Update Task Priority (high, medium, low) <br>
+                                Update Task Status (Open, Closed) <br>
+                            </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="timesheet" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>Register time against task. <br>Track accurately the time spent with multiple timers</p>
+    
+                             <h2>Time Approval</h2>
+                             <p class='tab-desc'>The time approval module offers a simple (and optional) timesheet approval process..
+                            </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="expenses" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>Keep track of your project expenses effortlessly.</p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="risk" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Risk tab allows users to view a summary of risks. <br>
+                                Create risk for projects and audits, assign owner and track. <br>
+                                Risk Matrix Graphical Display.
+                             </p>
+
+                             <h2>Advance Filters</h2>
+                             <p class='tab-desc'>The filter or query function allows you to narrow down the list of risks.
+                             </p>
+
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also “archive” closed risks.
+                             </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="invoices" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Audit tab allows users to view a summary of invoices, including a count of invoices past due. With one click, users can customize, edit and send invoices.
+                             </p>
+
+                             <h2>Advance Filters</h2>
+                             <p class='tab-desc'>The filter or query function allows you to narrow down the list of invoices
+                             </p>
+
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also “archive” paid invoice . Archiving invoices allows management to maintain the audit data for metrics, but remove the information from initial menu.
+                             </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="quotations" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Audit tab allows users to view a summary of invoics, including a count of quotations past due. With one click, users can customize, edit and send quotations.
+                             </p>
+
+                             <h2>Advance Filters</h2>
+                             <p class='tab-desc'>The filter or query function allows you to narrow down the list of invoices.
+                             </p>
+
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also “archive” paid quotation . Archiving quotations allows management to maintain the audit data for metrics, but remove the information from initial menu.
+                             </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="tickets" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>The Tickets tab allows users to view a summary of tickets (List View/Board View)., including a count of tickes that are open, closed, past due and priority counts . With one click, users can view all of the ticket assigned to that team member.
+                             </p>
+
+                             <h2>Advance Filters</h2>
+                             <p class='tab-desc'>The filter or query function allows you to narrow down the list of tickets. For example, the list of tickets can be limited by type, status, priority of findings, past due findings, archived tickets, tags, and more.
+                             </p>
+
+                             <h2>Archive</h2>
+                             <p class='tab-desc'>Users can also “archive” closed tickets. Archiving tickets allows management to maintain the ticket data for metrics, but remove the information from initial menu
+                             </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+                <!-- tab -->
+                <div id="reporting" data-tab-content class="active">
+                    <div class="tab-content-wrap">
+                        <div class="tab-text-wrap">
+                             <h2>Overview</h2>
+                             <p class='tab-desc'>Performance, Summarized Reports.
+                             </p>
+
+                             <h2>Formats</h2>
+                             <p class='tab-desc'>PDF <br> EXCEL <br> CSV
+                             </p>
+                        </div>
+                        
+                        <div class="tab-img-wrap">
+                            <img src="assets/hero.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING  -->
+    <div class="pricing">
+        <div class="content-wrap">
+            <div class="solutions">
+                <h1>Solution Process</h1>
+
+                <!-- solutions-stepper -->
+                <div class="stepper-container progress">
+                    <ul>
+                        <li class='first'>
+                            <p class="number">1</p>
+                            <h2 class="step-title">Plan</h2>
+                            <p class="step-desc">Estimate a realistic range of timeline to prioritize & complete tasks</p>
+                        </li>
+                        <li class='second'>
+                            <p class="number">2</p>
+                            <h2 class="step-title">Implement</h2>
+                            <p class="step-desc">Assign resources & work within timelines</p>
+                        </li>
+                        <li class='third'>
+                            <p class="number">3</p>
+                            <h2 class="step-title">Track</h2>
+                            <p class="step-desc">Track actual time spent on tasks</p>
+                        </li>
+                        <li class='fourth'>
+                            <p class="number">4</p>
+                            <h2 class="step-title">Report</h2>
+                            <p class="step-desc">Create detailed, customizable high-level reports to help visualize key data.</p>
+                        </li>
+                        <li class='fifth'>
+                            <p class="number">5</p>
+                            <h2 class="step-title">Analyze</h2>
+                            <p class="step-desc">Analyze project performance, resource utilization & costs</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-wrap">
+                <div class="text">
+                    <p class="topline">Choose the best one</p>
+                    <h1>Our Packages</h1>
+                    <p class="tagline">Get 30-Days FREE Trial. no Card required...</p>
+                </div>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <h1 class="plan-title">BASIC</h1>
+                        <h3 class="plan-tagline">Try it free</h3>
+                        <p class="plan-desc">Just want to keep track of tasks, time & create invoices.</p>
+                        <h1 class="price">R0.00</h1>
+                        <p class="term">/ month</p>
+
+
+                        <ul>
+                            <li>(Valid 30 Days) Users</li>
+                            <li>1 GB File Storage</li>
+                            <li>(Valid 30 Days) Clients</li>
+                            <li>(Valid 30 Days) Projects</li>
+                            <li>(Valid 30 Days) Audits</li>
+                            <li>(Valid 30 Days) Invoices</li>
+                            <li>(Valid 30 Days) Tickets</li>
+                            <li>(Valid 30 Days) Expenses Entries</li>
+                            <li>(Valid 30 Days) Time Entries</li>
+                            <li id="risk">Risks</li>
+                        </ul>
+
+                        <div class="card-btn-wrap">
+                            <a href="" class="card-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="plan-title">STANDARD</h1>
+                        <h3 class="plan-tagline">Most Popular</h3>
+                        <p class="plan-desc">If you are a small business and are interested in managing all processes with one system, this is the perfect plan for you.</p>
+                        <h1 class="price">R 160.00</h1>
+                        <p class="term">/user /month</p>
+
+                        <ul>
+                            <li>10 Users</li>
+                            <li>10 GB File Storage</li>
+                            <li>Unlimited Clients</li>
+                            <li>Unlimited Projects</li>
+                            <li>Unlimited Audits</li>
+                            <li>Unlimited Invoices</li>
+                            <li>Unlimited Tickets</li>
+                            <li>Unlimited Expenses Entries</li>
+                            <li>Unlimited Time Entries</li>
+                            <li>Risks</li>
+                        </ul>
+
+                        <div class="card-btn-wrap">
+                            <a href="" class="card-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="plan-title">PREMIUM</h1>
+                        <h3 class="plan-tagline">Get the Works</h3>
+                        <p class="plan-desc">If you are a mediuim business and are interested in managing all processes with one system, this is the perfect plan for you.</p>
+                        <h1 class="price">R 250.00</h1>
+                        <p class="term">/user /month</p>
+
+                        <ul>
+                            <li>25 Users</li>
+                            <li>30 GB File Storage</li>
+                            <li>Unlimited Clients</li>
+                            <li>Unlimited Projects</li>
+                            <li>Unlimited Audits</li>
+                            <li>Unlimited Invoices</li>
+                            <li>Unlimited Tickets</li>
+                            <li>Unlimited Expenses Entries</li>
+                            <li>Unlimited Time Entries</li>
+                            <li>Risks</li>
+                        </ul>
+
+                        <div class="card-btn-wrap">
+                            <a href="" class="card-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="plan-title">ENTERPRISE</h1>
+                        <h3 class="plan-tagline">Customize</h3>
+                        <p class="plan-desc">For customizing or on premises</p>
+                        <h1 class="price">QUOTE</h1>
+                        <p class="term">contact us</p>
+
+                        <ul>
+                            <li>Everything in Premium & more</li>
+                            <li>_GB File Storage</li>
+                            <li>Unlimited Clients</li>
+                            <li>Unlimited Projects</li>
+                            <li>Unlimited Audits</li>
+                            <li>Unlimited Invoices</li>
+                            <li>Unlimited Tickets</li>
+                            <li>Unlimited Expenses Entries</li>
+                            <li>Unlimited Time Entries</li>
+                            <li>Risks</li>
+                        </ul>
+
+                        <div class="card-btn-wrap">
+                            <a href="" class="card-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT US  -->
+    <div class="wrap">
+        <div class="contact-container">
+            <div class="contact-text-wrap">
+                <h1 class="contact-title">Get In Touch</h1>
+                <p class="contact-desc">Have any enquiry or some feedback for us? <br>
+                    Please fill out the form below or contact us on our number(s) below.
+                </p>
+    
+                <div class="row">
+                    <div class="block">
+                        <h3>Our Address</h3>
+                        <p>304 Surrey Avenue, Ferndale,South Africa, 2194</p>
+                    </div>
+                    <div class="block">
+                        <h3>Our Phone</h3>
+                        <p>Office Telephone: +27 63 4715583</p>
+                        <p>Mobile: +27 63 4715583</p>
+                    </div>
+                </div>
+                <div class="row block-btm">
+                    <div class="block">
+                        <h3>Our Email</h3>
+                        <p>Main Email: admin@quadlane.com</p>
+                        <p>Inquiries: info@quadlane.com</p>
+                    </div>
+                    <div class="block">
+                        <h3>Our Support</h3>
+                        <p>Main Support: support@quadlane.com</p>
+                        <p>Sales: sales@quadlane.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form action="https://formspree.io/f/xpzkjzgn" method="POST" id="my-form">
+                    <div class="field-wrap names">
+                        <div class="input"><label for="name">Name</label><pre></pre> <input type="text" id="name" name='firstName' required></div>
+                        <div class="input"><label for="surname">Surname</label><pre></pre> <input type="text" id="surname" name='lastName' required></div>
+                    </div>
+    
+                    <div class="field-wrap">
+                        <div class="input email"><label for="email">Email</label><pre></pre> <input type="email" id="email" name='email'></div>
+                    </div>
+    
+                    <div class="message-wrap">
+                        <label for="message">Message</label><pre></pre><textarea rows="16" id='message' name='message'></textarea>
+                    </div>
+    
+                    <button type='submit'>Get In Touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+     <!--FOOTER-->
+     <footer class="footer">
+        
+        <div class="container">
+            <div class="footer-left">
+                <a href="index.html" class="logo"><img src="assets/logo.svg" alt="logo" class='footer-logo'></a>
+                <p>
+                    AUDIT, PROJECT, INVOICING INFORMATION MANAGEMENT SYSTEM.
+                </p>
+            </div>
+    
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h2>Product</h2>
+    
+                    <ul class="box">
+                        <li>Product Overview</li>
+                        <li>Request a Demo</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>Use Cases</h2>
+    
+                    <ul class="box">
+                        <li>Project Managers</li>
+                        <li>Freelancers</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>About</h2>
+    
+                    <ul class="box">
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copy-container">
+                <p id="copy">&copy; 2021 | QuadLane | All rights reserved</p>
+                <p id="name">Designed By Neo Matlala</p>
+            </div>
+
+            <div class="socials">
+                <a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa fa-google" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src='main.js' defer></script>
+</body>
+
+</html>
